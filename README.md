@@ -12,15 +12,21 @@ There's about sixteen thousand porn sites url which may be picked.
 Enjoy!
 
 
+## Requirements
+* Python3.7
+* pipenv
+    - `pip install pipenv`
+* Module dependencies (pyperclip, winshell), installed via ´pipenv´
+
+
+## Note
+This should be built on Windows, as `pyinstaller` doesn't support cross-compilation. You may adapt the process to be run under `wine`, though.
+
+
 ## Quickstart
 
 1. `git clone https://github.com/BrunoFauth/clipboardporn`
 1. `cd clipboardporn`
 1. `pipenv install`
 1. `cd clipboardporn`
-
-then
-* `pipenv run build.sh`
-
-or
-* `pipenv run build.bat`
+1. `pipenv run build.bat`
