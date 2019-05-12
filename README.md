@@ -47,6 +47,8 @@ Enjoy!
     1. `pipenv install`
     1. `pipenv run build.bat`
 
+- After that, a `dist` directory, which contains the compiled cbp "virus", will have appeared inside the cloned repo. You know what to do then ;D
+
 
 #TODO
 
