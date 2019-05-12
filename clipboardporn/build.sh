@@ -6,6 +6,6 @@ pyinstaller \
     --onefile \
     --windowed \
     --name CBViewer \
-    --add-data ".\porn-sites.list;." \
+    --add-data "./porn-sites.list:." \
     --noupx \
-    .\clipboardporn.py
+    ./clipboardporn.py

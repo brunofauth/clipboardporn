@@ -15,6 +15,12 @@ Enjoy!
 ## Quickstart
 
 1. `git clone https://github.com/BrunoFauth/clipboardporn`
-1. `cd clipboard porn`
+1. `cd clipboardporn`
 1. `pipenv install`
-1. `pipenv run build.sh` or `pipenv run build.bat`
+1. `cd clipboardporn`
+
+then
+* `pipenv run build.sh`
+
+or
+* `pipenv run build.bat`
