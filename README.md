@@ -7,7 +7,7 @@ The script gets persistance, by copying itself into shell:startup.
 
 Everytime the victim copies text into the clipboard, there's one in three chances that it will be replaced for a random porn site url.
 
-There's over sixteen thousand porn sites url which may be picked.
+There's about sixteen thousand porn sites url which may be picked.
 
 Enjoy!
 
