@@ -30,3 +30,7 @@ This should be built on Windows, as `pyinstaller` doesn't support cross-compilat
 1. `pipenv install`
 1. `cd clipboardporn`
 1. `pipenv run build.bat`
+
+
+#TODO
+* Swap bitmaps for nudes
