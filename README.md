@@ -50,6 +50,6 @@ Enjoy!
 - After that, a `dist` directory, which contains the compiled cbp "virus", will have appeared inside the cloned repo. You know what to do then ;D
 
 
-#TODO
+# TODO
 
 * Swap bitmaps for nudes
