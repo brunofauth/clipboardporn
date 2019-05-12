@@ -13,24 +13,41 @@ Enjoy!
 
 
 ## Requirements
-* Python3.7
-* pipenv
-    - `pip install pipenv`
-* Module dependencies (pyperclip, winshell), installed via ´pipenv´
+
+- Linux
+    1. wine
+        * `sudo pacman -S wine`
+        * `sudo apt install wine`
+
+- Windows
+    1. Python3.7
+    1. pipenv
+        * `pip install pipenv`
 
 
-## Note
-This should be built on Windows, as `pyinstaller` doesn't support cross-compilation. You may adapt the process to be run under `wine`, though.
+## Before we may begin...
+
+- On Linux
+    * When prompted to install python, add it to the PATH variable
+    * Installing wine's mono and gecko packages aren't necessary
+
+- On Windows
+    * Using pipenv is not really necessary; you could install the module dependencies through pip, although that's not recommended.
 
 
 ## Quickstart
 
-1. `git clone https://github.com/BrunoFauth/clipboardporn`
-1. `cd clipboardporn`
-1. `pipenv install`
-1. `cd clipboardporn`
-1. `pipenv run build.bat`
+- Linux
+    1. `git clone https://github.com/BrunoFauth/clipboardporn`
+    1. `./clipboardporn/build.sh`
+
+- Windows
+    1. `git clone https://github.com/BrunoFauth/clipboardporn`
+    1. `cd clipboardporn`
+    1. `pipenv install`
+    1. `pipenv run build.bat`
 
 
 #TODO
+
 * Swap bitmaps for nudes
