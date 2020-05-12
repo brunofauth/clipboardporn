@@ -1,6 +1,8 @@
 #! /usr/bin/env sh
 
 
+set -e
+
 # Absolute path this script
 cd $(dirname "$(readlink -f "$0")")
 
@@ -12,13 +14,12 @@ PYTHON_SRC="https://www.python.org/ftp/python/3.7.3/python-3.7.3.exe"
 export WINEPREFIX="$(pwd)/cbpwine"
 
 
-if [ ! -d "$PYTHON_DIR" ]; then
-    mkdir "$PYTHON_DIR"
-    curl "$PYTHON_SRC" -o "$PYTHON_DST"
-    wine "$PYTHON_DST"
-    wine python -m pip install --upgrade pip
-    wine pip install -r requirements.txt
-fi
+[ -d "$PYTHON_DIR" ] || mkdir -p "$PYTHON_DIR"
+[ -f "$PYTHON_DST" ] || curl "$PYTHON_SRC" -o "$PYTHON_DST"
+
+wine "$PYTHON_DST"
+wine python -m pip install --upgrade pip
+wine pip install -r requirements.txt
 
 
 wineconsole build.bat
