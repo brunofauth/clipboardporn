@@ -15,24 +15,16 @@ Enjoy!
 ## Requirements
 
 - Linux
+    1. Python (>=3.7)
+        * `sudo pacman -S python`
+        * `sudo apt install python3`
     1. wine
         * `sudo pacman -S wine`
         * `sudo apt install wine`
+        * `wine-mono` and `wine-gecko` aren't necessary
 
 - Windows
-    1. Python3.7
-    1. pipenv
-        * `pip install pipenv`
-
-
-## Before we may begin...
-
-- On Linux
-    * When prompted to install python, add it to the PATH variable
-    * Installing wine's mono and gecko packages aren't necessary
-
-- On Windows
-    * Using pipenv is not really necessary; you could install the module dependencies through pip, although that's not recommended.
+    1. Python (>=3.7, [download here](https://www.python.org/downloads/))
 
 
 ## Quickstart
@@ -44,10 +36,10 @@ Enjoy!
 - Windows
     1. `git clone https://github.com/BrunoFauth/clipboardporn`
     1. `cd clipboardporn`
-    1. `pipenv install`
-    1. `pipenv run build.bat`
+    1. `pin install -r requirements.txt`
+    1. `build.bat`
 
-- After that, a `dist` directory, which contains the compiled cbp "virus", will have appeared inside the cloned repo. You know what to do then ;D
+- After that, a `dist` directory, containing a cbp build, will have appeared inside the cloned repo. You know what to do then ;D
 
 
 # TODO
