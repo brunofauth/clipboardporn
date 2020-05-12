@@ -7,6 +7,7 @@ set -e
 cd $(dirname "$(readlink -f "$0")")
 
 
+# This is used instead of $TMPDIR so that things get cached
 PYTHON_DIR="$(pwd)/python-build"
 PYTHON_DST="$PYTHON_DIR/python37-x64.exe"
 PYTHON_SRC="https://www.python.org/ftp/python/3.7.3/python-3.7.3.exe"
